@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 106
+  controlID: 131
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 398}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 29
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 30
+  controlID: 51
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 399
     width: 921
     height: 548
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -452,7 +452,7 @@ MonoBehaviour:
       splitSize: 6
       xOffset: 0
     m_HorizontalSplitter:
-      ID: 155
+      ID: 136
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes: a00000000a010000
@@ -506,11 +506,11 @@ MonoBehaviour:
     - e00: 0.57578945
       e01: 0
       e02: 0
-      e03: -13.789459
+      e03: -13.789429
       e10: 0
       e11: 0.57578945
       e12: 0
-      e13: 114.14842
+      e13: 114.148415
       e20: 0
       e21: 0
       e22: 1
@@ -522,11 +522,11 @@ MonoBehaviour:
     - e00: 0.57578945
       e01: 0
       e02: 0
-      e03: -13.789459
+      e03: -13.789429
       e10: 0
       e11: 0.57578945
       e12: 0
-      e13: 114.14842
+      e13: 114.148415
       e20: 0
       e21: 0
       e22: 1
@@ -568,10 +568,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: d973c618362fd5a4eb006a74a76d66a5,
+  m_AnimatorController: {fileID: 9100000, guid: 7b654eb98dede3048a42353d08346a89,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107577007921339786, guid: d973c618362fd5a4eb006a74a76d66a5,
+  - m_Target: {fileID: 1107577007921339786, guid: 7b654eb98dede3048a42353d08346a89,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -640,9 +640,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c2860000
-      m_LastClickedID: 34498
-      m_ExpandedIDs: 4a3affffd03bffff
+      m_SelectedIDs: d4390000
+      m_LastClickedID: 0
+      m_ExpandedIDs: d4fbffff5a3700001c380000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -750,9 +750,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a0810000
-    m_LastClickedID: 33184
-    m_ExpandedIDs: 00000000428000003a8200008685000000ca9a3b
+    m_SelectedIDs: 222b0000
+    m_LastClickedID: 11042
+    m_ExpandedIDs: 000000001c280000a42c0000d034000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -780,7 +780,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000428000003a82000086850000
+    m_ExpandedIDs: 000000001c280000a42c0000d0340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -811,18 +811,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 420d000018f7ffff8a260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Ammo
+      m_OriginalName: Ammo
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 14828
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
