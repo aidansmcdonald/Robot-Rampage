@@ -12,6 +12,10 @@ public class GunEquipper : MonoBehaviour
     // Active gun
     GameObject activeGun;
 
+    // Reference to GameUI
+    [SerializeField]
+    GameUI gameUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,16 +31,19 @@ public class GunEquipper : MonoBehaviour
         {
             loadWeapon(pistol);
             activeWeaponType = Constants.Pistol;
+            gameUI.UpdateReticle();
         }
-        if (Input.GetKeyDown("2"))
+        else if (Input.GetKeyDown("2"))
         {
             loadWeapon(assaultRifle);
             activeWeaponType = Constants.AssaultRifle;
+            gameUI.UpdateReticle();
         }
-        if (Input.GetKeyDown("3"))
+        else if (Input.GetKeyDown("3"))
         {
             loadWeapon(shotgun);
             activeWeaponType = Constants.Shotgun;
+            gameUI.UpdateReticle();
         }
     }
 
