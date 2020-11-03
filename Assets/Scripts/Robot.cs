@@ -5,6 +5,9 @@ using UnityEngine;
 public class Robot : MonoBehaviour
 {
     [SerializeField]
+    GameObject missileprefab;
+
+    [SerializeField]
     private string robotType; //colour
 
     public int health;      
@@ -51,7 +54,10 @@ public class Robot : MonoBehaviour
     }
     private void fire()
     {
-        //Plays fire animation
+        // Creates a new missilePrefab, sets pos and rot to robots firing spot
+        GameObject missile = Instantiate(missileprefab);
+        missile.transform.position = missileFireSpot.transform.position;
+        missile.transform.rotation = missileFireSpot.transform.rotation;
         robot.Play("Fire");
     }
 }
