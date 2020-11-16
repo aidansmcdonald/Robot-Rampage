@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\GunEquipper.cs" />
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\Pistol.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Robot.cs" />
     <Compile Include="Assets\Scripts\Shotgun.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

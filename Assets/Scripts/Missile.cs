@@ -24,4 +24,16 @@ public class Missile : MonoBehaviour
         yield return new WaitForSeconds(10);
         Destroy(gameObject);
     }
+    
+    //Check is missle has collided with player
+    //Missile destroys itself and does damage
+    void OnCollisionEnter(Collision collider)
+    {
+        if (collider.gameObject.GetComponent<Player>() != null
+        && collider.gameObject.tag == "Player")
+        {
+            collider.gameObject.GetComponent<Player>().TakeDamage(damage);
+        }
+        Destroy(gameObject);
+    }
 }

@@ -60,4 +60,26 @@ public class Robot : MonoBehaviour
         missile.transform.rotation = missileFireSpot.transform.rotation;
         robot.Play("Fire");
     }
+
+    // Takes damage and displays death animation on death
+    public void TakeDamage(int amount)
+    {
+        if (isDead)
+        {
+            return;
+        }
+        health -= amount;
+        if (health <= 0)
+        {
+            isDead = true;
+            robot.Play("Die");
+            StartCoroutine("DestroyRobot");
+        }
+    }
+    // Adds a delay before destroying robot, allows animation completion
+    IEnumerator DestroyRobot()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(gameObject);
+    }
 }
