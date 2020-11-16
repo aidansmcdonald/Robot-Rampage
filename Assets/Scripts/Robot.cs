@@ -23,6 +23,14 @@ public class Robot : MonoBehaviour
     private bool isDead;
 
     public Animator robot;
+
+    [SerializeField]
+    private AudioClip deathSound;
+    [SerializeField]
+    private AudioClip fireSound;
+    [SerializeField]
+    private AudioClip weakHitSound;
+
     void Start()
     {
         // Sets agent and player values to their respective components
@@ -59,6 +67,8 @@ public class Robot : MonoBehaviour
         missile.transform.position = missileFireSpot.transform.position;
         missile.transform.rotation = missileFireSpot.transform.rotation;
         robot.Play("Fire");
+
+        GetComponent<AudioSource>().PlayOneShot(fireSound);
     }
 
     // Takes damage and displays death animation on death
@@ -74,6 +84,11 @@ public class Robot : MonoBehaviour
             isDead = true;
             robot.Play("Die");
             StartCoroutine("DestroyRobot");
+            GetComponent<AudioSource>().PlayOneShot(deathSound);
+        }
+        else
+        {
+            GetComponent<AudioSource>().PlayOneShot(weakHitSound);
         }
     }
     // Adds a delay before destroying robot, allows animation completion
