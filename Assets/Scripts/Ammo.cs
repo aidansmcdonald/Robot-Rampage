@@ -77,5 +77,6 @@ public class Ammo : MonoBehaviour
             Debug.LogError("Unrecognized gun type passed:" + tag);
         }
         tagToAmmo[tag]--; //subtract a bullet from specific gun
+        gameUI.SetAmmoText(tagToAmmo[tag]);
     }
 }
