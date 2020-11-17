@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    public GameObject gameOverPanel;
     public GameUI gameUI;
     public GameObject player;
     public int score;
@@ -85,6 +87,40 @@ public class Game : MonoBehaviour
         }
     }
 
+    // Frees cursor when game is over
+    public void OnGUI()
+    {
+        if (isGameOver && Cursor.visible == false)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+    // Called when game is over, disables objects
+    public void GameOver()
+    {
+        isGameOver = true;
+        Time.timeScale = 0;
+        player.GetComponent<FirstPersonController>().enabled = false;
+        player.GetComponent<CharacterController>().enabled = false;
+        gameOverPanel.SetActive(true);
+    }
+    // Restarts the scene
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(Constants.SceneBattle);
+        gameOverPanel.SetActive(true);
+    }
+    // Called when user selects exit button
+    public void Exit()
+    {
+        Application.Quit();
+    }
+    // Loads menu when menu button is pressed
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(Constants.SceneMenu);
+    }
     // Update is called once per frame
     void Update()
     {

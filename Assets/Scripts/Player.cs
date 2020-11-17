@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Game game;
+    public AudioClip playerDead;
     public int health;
     // Armor is extra health that receives 50% reduced damage
     public int armor;
@@ -50,7 +52,8 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("GameOver");
+            GetComponent<AudioSource>().PlayOneShot(playerDead);
+            game.GameOver();
         }
     }
     

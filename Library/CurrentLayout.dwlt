@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 424}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 1467
+  controlID: 5462
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 424}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 1468
+  controlID: 5556
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 1365
+  controlID: 5463
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -673,9 +673,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 38290000
       m_LastClickedID: 0
-      m_ExpandedIDs: 00eaffffeaf2ffff62f3ffff4af6ffffd4fbffff
+      m_ExpandedIDs: ae53ffffdc79fffffa79ffffe47bffff1481ffffc8a7ffffa2b8ffffa8b9ffffcadffffff4dfffffe8e1ffffbce4ffffd8e9ffffd4fbffff14450000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -737,20 +737,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\YEAR_TWO\Semester_One\Game_Engines\FPS_Game\robotrampage_starter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 362b0000
-    m_LastClickedID: 11062
-    m_ExpandedIDs: 000000002c280000b82c0000e834000000ca9a3b
+    m_SelectedIDs: 062d0000
+    m_LastClickedID: 11526
+    m_ExpandedIDs: 000000002e280000ba2c0000ea34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -778,7 +778,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c280000b82c0000e834000000ca9a3b
+    m_ExpandedIDs: 000000002e280000ba2c0000ea34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -933,7 +933,7 @@ MonoBehaviour:
       splitSize: 6
       xOffset: 0
     m_HorizontalSplitter:
-      ID: 1370
+      ID: 5513
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes: a0000000e9000000
