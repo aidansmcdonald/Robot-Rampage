@@ -12,6 +12,8 @@ public class Ammo : MonoBehaviour
     private int shotgunAmmo = 10;
     [SerializeField]
     private int assaultRifleAmmo = 50;
+    [SerializeField]
+    private int fullyAutoShotgunAmmo = 20;
     // Allows mapping a gun type to ammunition count
     public Dictionary<string, int> tagToAmmo;
     
@@ -24,6 +26,7 @@ public class Ammo : MonoBehaviour
           { Constants.Pistol , pistolAmmo },
           { Constants.Shotgun , shotgunAmmo },
           { Constants.AssaultRifle , assaultRifleAmmo },
+           { Constants.FullyAutoShotgun , fullyAutoShotgunAmmo },
        };
     }
 

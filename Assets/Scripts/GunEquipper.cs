@@ -9,6 +9,7 @@ public class GunEquipper : MonoBehaviour
     public GameObject pistol;
     public GameObject assaultRifle;
     public GameObject shotgun;
+    public GameObject fullyAutoShotgun;
     // Active gun
     GameObject activeGun;
 
@@ -48,6 +49,12 @@ public class GunEquipper : MonoBehaviour
             activeWeaponType = Constants.Shotgun;
             gameUI.UpdateReticle();
         }
+        else if (Input.GetKeyDown("4"))
+        {
+            loadWeapon(fullyAutoShotgun);
+            activeWeaponType = Constants.FullyAutoShotgun;
+            gameUI.UpdateReticle();
+        }
     }
 
     //Turn off all gun objects except the one passed in
@@ -56,6 +63,7 @@ public class GunEquipper : MonoBehaviour
         pistol.SetActive(false);
         assaultRifle.SetActive(false);
         shotgun.SetActive(false);
+        fullyAutoShotgun.SetActive(false);
         weapon.SetActive(true);
         activeGun = weapon;
         gameUI.SetAmmoText(ammo.GetAmmo(activeGun.tag));

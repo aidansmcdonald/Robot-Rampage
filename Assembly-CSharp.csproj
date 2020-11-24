@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\AssaultRifle.cs" />
     <Compile Include="Assets\Scripts\BackgroundMusic.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\FullyAutoShotgun.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />

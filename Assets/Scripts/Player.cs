@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
             gameUI.SetAmmoText(ammo.GetAmmo(Constants.AssaultRifle));
         }
     }
-    private void pickupPisolAmmo()
+    private void pickupPistolAmmo()
     {
         ammo.AddAmmo(Constants.Pistol, 20);
         gameUI.SetPickUpText("Pistol ammo picked up + 20 ammo");
@@ -106,6 +106,16 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void pickupFullyAutoShotgunAmmo()
+    {
+        ammo.AddAmmo(Constants.FullyAutoShotgun, 20);
+        gameUI.SetPickUpText("Fully Auto Shotgun ammo picked up + 20 ammo");
+        if (gunEquipper.GetActiveWeapon().tag == Constants.FullyAutoShotgun)
+        {
+            gameUI.SetAmmoText(ammo.GetAmmo(Constants.FullyAutoShotgun));
+        }
+    }
+
     // Takes an int that reps an item/pickup
     public void PickUpItem(int pickupType)
     {
@@ -121,11 +131,13 @@ public class Player : MonoBehaviour
                 pickupAssaultRifleAmmo();
                 break;
             case Constants.PickUpPistolAmmo:
-                pickupPisolAmmo();
+                pickupPistolAmmo();
                 break;
             case Constants.PickUpShotgunAmmo:
-
                 pickupShotgunAmmo();
+                break;
+            case Constants.PickUpFullyAutoShotgunAmmo:
+                pickupFullyAutoShotgunAmmo();
                 break;
             default:
                 Debug.LogError("Bad pickup type passed" + pickupType);

@@ -11,6 +11,7 @@ public class Constants
     public const string Pistol = "Pistol";
     public const string Shotgun = "Shotgun";
     public const string AssaultRifle = "AssaultRifle";
+    public const string FullyAutoShotgun = "FullyAutoShotgun";
     // Robot Types
     public const string RedRobot = "RedRobot";
     public const string BlueRobot = "BlueRobot";
@@ -21,6 +22,7 @@ public class Constants
     public const int PickUpShotgunAmmo = 3;
     public const int PickUpHealth = 4;
     public const int PickUpArmor = 5;
+    public const int PickUpFullyAutoShotgunAmmo = 6;
     // Misc
     public const string Game = "Game";
     public const float CameraDefaultZoom = 60f;
