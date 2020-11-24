@@ -46,6 +46,14 @@ public class Gun : MonoBehaviour
         {
             GetComponent<AudioSource>().PlayOneShot(liveFire);
             ammo.ConsumeAmmo(tag);
+
+            //Send out a ray from gun, process hit on collision
+            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, range))
+            {
+                processHit(hit.collider.gameObject);
+            }
         }
         else // else play dry fire sound
         {
@@ -53,13 +61,7 @@ public class Gun : MonoBehaviour
         }
         GetComponentInChildren<Animator>().Play("Fire");
 
-        //Send out a ray from gun, process hit on collision
-        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, range))
-        {
-            processHit(hit.collider.gameObject);
-        }
+        
     }
     
     private void processHit(GameObject hitObject)
